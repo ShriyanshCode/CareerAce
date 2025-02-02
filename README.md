@@ -1,70 +1,137 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CareerAce
 
-## Available Scripts
+**CareerAce** is an AI-powered career assistant that helps users get personalized career advice and guidance. It offers features like automatic resume extraction, job profile suggestions, and roadmap generation for career development.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Automatic Resume Extraction**: Upload your resume, and CareerAce extracts valuable information to recommend job profiles.
+- **Career Roadmap**: Get personalized career roadmaps based on user input or a predefined set of options.
+- **Interactive Chatbot**: Engage in an interactive conversation with the bot for career-related questions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Setup Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Make sure you have the following tools installed:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Node.js** (for React front-end)
+- **npm** (Node Package Manager, for React dependencies)
+- **Python 3.x** (for the backend server)
+- **virtualenv** (for Python virtual environments)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Backend Setup (Python)
 
-### `npm run eject`
+1. **Create a Python Virtual Environment**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   Navigate to the backend directory and create a virtual environment:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   python -m venv venv
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Activate the Virtual Environment**:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   On **Windows**:
 
-## Learn More
+   ```bash
+   .\venv\Scripts\activate
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   On **MacOS/Linux**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   source venv/bin/activate
+   ```
 
-### Code Splitting
+3. **Install Required Python Packages**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   Run the following command to install the required packages:
 
-### Analyzing the Bundle Size
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **Run the Python Server**:
 
-### Making a Progressive Web App
+   To start the Python server, run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   python server.py
+   ```
 
-### Advanced Configuration
+   This will launch the backend server on `http://127.0.0.1:5000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+### Frontend Setup (React)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. **Install Dependencies**:
 
-### `npm run build` fails to minify
+   Navigate to the React frontend directory and run the following command to install all dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   npm install
+   ```
+
+2. **Start the React Development Server**:
+
+   To start the React app, run:
+
+   ```bash
+   npm start
+   ```
+
+   This will launch the React application on `http://localhost:3000`.
+
+---
+
+## Project Structure
+
+```
+CareerAce/
+├── backend/                    # Python backend files
+│   ├── server.py               # Main backend server file
+│   ├── requirements.txt        # Python dependencies
+│   ├── assets/                 # Static assets (e.g., audio files, images)
+├── frontend/                   # React frontend files
+│   ├── public/                 # Public assets (e.g., index.html)
+│   ├── src/                    # React source code
+│   ├── package.json            # React dependencies
+│   ├── node_modules/           # Installed node modules
+├── .gitignore                  # Git ignore file
+└── README.md                   # This file
+```
+
+---
+
+## Technologies Used
+
+- **Backend**: Python, Flask
+- **Frontend**: React, JavaScript
+- **Audio**: MP3 files for user interaction
+- **Styling**: CSS for UI
+
+---
+
+## Contributing
+
+We welcome contributions to improve CareerAce. Feel free to fork this repository and submit pull requests for bug fixes, improvements, or new features.
+
+---
+
+## License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## Acknowledgements
+
+- Special thanks to everyone who has contributed to the development of CareerAce!
