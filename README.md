@@ -99,6 +99,7 @@ Make sure you have the following tools installed:
 
 - **Backend**: Python, Flask
 - **Frontend**: React, JavaScript
+- **GenAI**: Ollama - LLama 3.2
 - **Audio**: MP3 files for user interaction
 - **Styling**: CSS for UI
 
