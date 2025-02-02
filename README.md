@@ -92,23 +92,7 @@ Make sure you have the following tools installed:
 
 ---
 
-## Project Structure
-
-```
-CareerAce/
-├── backend/                    # Python backend files
-│   ├── server.py               # Main backend server file
-│   ├── requirements.txt        # Python dependencies
-│   ├── assets/                 # Static assets (e.g., audio files, images)
-├── frontend/                   # React frontend files
-│   ├── public/                 # Public assets (e.g., index.html)
-│   ├── src/                    # React source code
-│   ├── package.json            # React dependencies
-│   ├── node_modules/           # Installed node modules
-├── .gitignore                  # Git ignore file
-└── README.md                   # This file
-```
-
+---
 ---
 
 ## Technologies Used
